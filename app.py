@@ -21,7 +21,7 @@ def corrigir_conselho(conselho):
     return conselho_sem_acentos
 
 # Endpoint para obter um conselho aleatório
-@app.route('/conselho', methods=['GET'])
+@app.route('/', methods=['GET'])
 def obter_conselho():
     # Selecionar um conselho aleatório
     conselho_aleatorio = random.choice(conselhos)
